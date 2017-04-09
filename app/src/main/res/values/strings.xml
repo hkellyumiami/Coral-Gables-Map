@@ -2,4 +2,5 @@
     <string name="app_name">CoralGablesMap</string>
     <string name="title_activity_maps">Map</string>
     <string name="congregational_church">Coral Gables Congregational Church</string>
+    <string name="title_activity_main_menu">MainMenu</string>
 </resources>
