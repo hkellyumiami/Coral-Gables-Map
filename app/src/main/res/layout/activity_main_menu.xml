@@ -12,13 +12,13 @@
             android:layout_height="wrap_content">
             <Button
                 android:id="@+id/building01"
-                android:layout_width="0"
+                android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content">
             </Button>
             <Button
                 android:id="@+id/building02"
-                android:layout_width="0"
+                android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:clickable="false">
@@ -29,14 +29,14 @@
             android:layout_height="wrap_content">
             <Button
                 android:id="@+id/building03"
-                android:layout_width="0"
+                android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:clickable="false">
             </Button>
             <Button
                 android:id="@+id/building04"
-                android:layout_width="0"
+                android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:clickable="false">
@@ -47,14 +47,14 @@
             android:layout_height="wrap_content">
             <Button
                 android:id="@+id/building05"
-                android:layout_width="0"
+                android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:clickable="false">
             </Button>
             <Button
                 android:id="@+id/building06"
-                android:layout_width="0"
+                android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:clickable="false">
@@ -65,14 +65,14 @@
             android:layout_height="wrap_content">
             <Button
                 android:id="@+id/building07"
-                android:layout_width="0"
+                android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:clickable="false">
             </Button>
             <Button
                 android:id="@+id/building08"
-                android:layout_width="0"
+                android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:clickable="false">

@@ -36,6 +36,10 @@ public class MainMenu extends AppCompatActivity {
             case R.id.building08:
                 break;
             case R.id.map_button:
+                Intent data = new Intent();
+                data.setClassName("edu.miami.c10404869.coralgablesmap",
+                        "edu.miami.c10404869.coralgablesmap.MapsActivity");
+                startActivityForResult(data,CALL_MAP);
                 break;
             default:
                 break;
@@ -60,9 +64,9 @@ public class MainMenu extends AppCompatActivity {
     public void callBuildingViewer(int view_id) {
 
         Intent data = new Intent();
+        data.setClassName("edu.miami.c10404869.coralgablesmap",
+                        "edu.miami.c10404869.coralgablesmap.BuildingViewer");
         data.putExtra("view_id",view_id);
-
-
-
+        startActivity(data);
     }
 }

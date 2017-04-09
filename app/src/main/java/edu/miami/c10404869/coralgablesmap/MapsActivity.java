@@ -1,5 +1,6 @@
 package edu.miami.c10404869.coralgablesmap;
 
+import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -50,6 +51,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         switch (marker.getTitle()) {
             case "Coral Gables Congregational Church":
                 Log.i("Infowindow clicked", "CGCC");
+                Intent data = new Intent();
+                data.putExtra("view_id",1);
+                setResult(RESULT_OK,data);
+                finish();
                 break;
             }
         }
