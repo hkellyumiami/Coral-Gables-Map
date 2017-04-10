@@ -8,80 +8,65 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <Button
-                android:id="@+id/building01"
-                android:layout_width="0dp"
-                android:layout_weight="1"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-            </Button>
+                <Button
+                    android:id="@+id/building01"
+                    android:text="Church"
+                    style="@style/MenuButton.clickable">
+                </Button>
+                <Button
+                    android:id="@+id/building02"
+                    style="@style/MenuButton.unclickable">
+                </Button>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/building03"
+                    style="@style/MenuButton.unclickable">
+                </Button>
+                <Button
+                    android:id="@+id/building04"
+                    style="@style/MenuButton.unclickable">
+                </Button>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/building05"
+                    style="@style/MenuButton.unclickable">
+                </Button>
+                <Button
+                    android:id="@+id/building06"
+                    style="@style/MenuButton.unclickable">
+                </Button>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/building07"
+                    style="@style/MenuButton.unclickable">
+                </Button>
+                <Button
+                    android:id="@+id/building08"
+                    style="@style/MenuButton.unclickable">
+                </Button>
+            </LinearLayout>
             <Button
-                android:id="@+id/building02"
-                android:layout_width="0dp"
-                android:layout_weight="1"
+                android:id="@+id/map_button"
+                android:text="Map"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:clickable="false">
+                android:onClick="onClickListener">
             </Button>
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <Button
-                android:id="@+id/building03"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:clickable="false">
-            </Button>
-            <Button
-                android:id="@+id/building04"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:clickable="false">
-            </Button>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <Button
-                android:id="@+id/building05"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:clickable="false">
-            </Button>
-            <Button
-                android:id="@+id/building06"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:clickable="false">
-            </Button>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <Button
-                android:id="@+id/building07"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:clickable="false">
-            </Button>
-            <Button
-                android:id="@+id/building08"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:clickable="false">
-            </Button>
-        </LinearLayout>
-        <Button
-            android:id="@+id/map_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        </Button>
     </ScrollView>
 </LinearLayout>

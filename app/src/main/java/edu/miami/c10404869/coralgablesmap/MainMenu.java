@@ -3,6 +3,7 @@ package edu.miami.c10404869.coralgablesmap;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 public class MainMenu extends AppCompatActivity {
@@ -15,7 +16,7 @@ public class MainMenu extends AppCompatActivity {
         setContentView(R.layout.activity_main_menu);
     }
 
-    public void onClick(View view) {
+    public void onClickListener(View view) {
 
         switch (view.getId()){
             case R.id.building01:
