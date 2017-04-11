@@ -38,7 +38,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        // Adds historic markers in Coral Gables and moves the camera
+        // Adds historic markers in Coral Gables and moves camera
         mMap.setOnInfoWindowClickListener(this);
         LatLng coralGables = new LatLng(25.748799, -80.279696);
         LatLng congChurch = new LatLng(25.742515, -80.278497);

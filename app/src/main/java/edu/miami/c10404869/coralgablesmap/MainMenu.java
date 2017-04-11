@@ -67,7 +67,7 @@ public class MainMenu extends AppCompatActivity {
     }
 
     public void callBuildingViewer(int view_id) {
-        //Puts building id into intent and starts Building Viewer Activity
+        //Puts building id into an intent and starts Building Viewer Activity
         Intent data = new Intent();
         data.setClassName("edu.miami.c10404869.coralgablesmap",
                         "edu.miami.c10404869.coralgablesmap.BuildingViewer");
