@@ -22,7 +22,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
+        // Obtains the SupportMapFragment and notifies when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
@@ -38,7 +38,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        // Adds historic markers in Coral Gables and moves the camera
+        // Adds historic markers in Coral Gables and moves camera
         mMap.setOnInfoWindowClickListener(this);
         LatLng coralGables = new LatLng(25.748799, -80.279696);
         LatLng congChurch = new LatLng(25.742515, -80.278497);
@@ -49,8 +49,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onInfoWindowClick(Marker marker){
         //When an infowindow is clicked, the selected location is returned to the menu activity
         switch (marker.getTitle()) {
+            //Puts building id into return intent and finishes activity
             case "Coral Gables Congregational Church":
-                Log.i("Infowindow clicked", "CGCC");
                 Intent data = new Intent();
                 data.putExtra("view_id",1);
                 setResult(RESULT_OK,data);
