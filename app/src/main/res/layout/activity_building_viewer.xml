@@ -4,26 +4,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:id="@+id/image_space"
-        android:orientation="vertical"
+    <ImageView android:id="@+id/main_image"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="70">
-        <ImageView android:id="@+id/build_image"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        </ImageView>
-        <Button android:id="@+id/feature_button"
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:onClick="onClick">
-        </Button>
-    </RelativeLayout>
+        android:layout_weight="70"
+        android:clickable="true"
+        android:onClick="onClick">
+    </ImageView>
     <Button android:id="@+id/extra_images"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="10"
-        android:onClick="onClick"
+        android:onClick="myClickHandler"
         android:visibility="visible">
     </Button>
     <LinearLayout android:id="@+id/audio_controls"
@@ -36,19 +28,19 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="onClick">
+            android:onClick="myClickHandler">
         </Button>
         <Button android:id="@+id/pause"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="onClick">
+            android:onClick="myClickHandler">
         </Button>
         <Button android:id="@+id/dismiss"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="onClick">
+            android:onClick="myClickHandler">
         </Button>
     </LinearLayout>
     <TextView android:id="@+id/text_desc"
