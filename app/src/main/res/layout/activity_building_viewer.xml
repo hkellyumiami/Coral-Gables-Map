@@ -16,7 +16,8 @@
         android:layout_height="0dp"
         android:layout_weight="10"
         android:onClick="myClickHandler"
-        android:visibility="visible">
+        android:visibility="visible"
+        android:text="EXTRA IMAGES">
     </Button>
     <LinearLayout android:id="@+id/audio_controls"
         android:orientation="horizontal"
@@ -28,19 +29,22 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="myClickHandler">
+            android:onClick="myClickHandler"
+            android:text="PLAY">
         </Button>
         <Button android:id="@+id/pause"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="myClickHandler">
+            android:onClick="myClickHandler"
+            android:text="PAUSE">
         </Button>
         <Button android:id="@+id/dismiss"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="myClickHandler">
+            android:onClick="myClickHandler"
+            android:text="DISMISS">
         </Button>
     </LinearLayout>
     <TextView android:id="@+id/text_desc"

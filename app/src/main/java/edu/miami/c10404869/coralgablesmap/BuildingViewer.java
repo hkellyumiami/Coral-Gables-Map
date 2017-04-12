@@ -95,7 +95,7 @@ public class BuildingViewer extends Activity {
             case 1:
                 mainImage.setImageResource(R.drawable.building01image01);
                 textView.setText(R.string.building01text01);
-                mediaPlayer.create(this,R.raw.building01audio01);
+                mediaPlayer = MediaPlayer.create(this,R.raw.building01audio01);
                 next_view_id = 2;
                 prev_view_id = 3;
                 toggle_view_id = 4;
@@ -104,7 +104,7 @@ public class BuildingViewer extends Activity {
             case 2:
                 mainImage.setImageResource(R.drawable.building01image02);
                 textView.setText(R.string.building01text02);
-                mediaPlayer.create(this,R.raw.building01audio02);
+                mediaPlayer = MediaPlayer.create(this,R.raw.building01audio02);
                 next_view_id = 3;
                 prev_view_id = 1;
                 toggle_view_id = 4;
@@ -113,7 +113,7 @@ public class BuildingViewer extends Activity {
             case 3:
                 mainImage.setImageResource(R.drawable.building01image03);
                 textView.setText(R.string.building01text03);
-                mediaPlayer.create(this,R.raw.building01audio03);
+                mediaPlayer = MediaPlayer.create(this,R.raw.building01audio03);
                 next_view_id = 1;
                 prev_view_id = 2;
                 toggle_view_id = 4;
@@ -122,7 +122,7 @@ public class BuildingViewer extends Activity {
             case 4:
                 mainImage.setImageResource(R.drawable.building01image04);
                 textView.setText(R.string.building01text04);
-                mediaPlayer.create(this,R.raw.building01audio04);
+                mediaPlayer = MediaPlayer.create(this,R.raw.building01audio04);
                 next_view_id = 5;
                 prev_view_id = 6;
                 toggle_view_id = 1;
@@ -131,7 +131,7 @@ public class BuildingViewer extends Activity {
             case 5:
                 mainImage.setImageResource(R.drawable.building01image05);
                 textView.setText(R.string.building01text05);
-                mediaPlayer.create(this,R.raw.building01audio05);
+                mediaPlayer = MediaPlayer.create(this,R.raw.building01audio05);
                 next_view_id = 6;
                 prev_view_id = 4;
                 toggle_view_id = 1;
@@ -140,7 +140,7 @@ public class BuildingViewer extends Activity {
             case 6:
                 mainImage.setImageResource(R.drawable.building01image06);
                 textView.setText(R.string.building01text06);
-                mediaPlayer.create(this,R.raw.building01audio06);
+                mediaPlayer = MediaPlayer.create(this,R.raw.building01audio06);
                 next_view_id = 4;
                 prev_view_id = 5;
                 toggle_view_id = 1;
