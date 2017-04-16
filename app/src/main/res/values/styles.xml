@@ -21,6 +21,7 @@
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_weight">1</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
     </style>
 
     <style name="MenuButton.clickable">
@@ -29,6 +30,7 @@
 
     <style name="MenuButton.unclickable">
         <item name="android:clickable">false</item>
+        <item name="android:src">@drawable/comingsoon</item>
     </style>
 
 </resources>

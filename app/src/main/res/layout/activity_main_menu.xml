@@ -2,11 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/salmon">
     <ScrollView
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="0dp"
+        android:layout_weight=".8">
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -14,59 +16,61 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <Button
+                <ImageView
                     android:id="@+id/building01"
-                    android:text="Church"
-                    style="@style/MenuButton.clickable">
-                </Button>
-                <Button
+                    android:src="@drawable/church_button"
+                    style="@style/MenuButton.clickable"
+                    android:layout_height="wrap_content">
+                </ImageView>
+                <ImageView
                     android:id="@+id/building02"
                     style="@style/MenuButton.unclickable">
-                </Button>
+                </ImageView>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <Button
+                <ImageView
                     android:id="@+id/building03"
                     style="@style/MenuButton.unclickable">
-                </Button>
-                <Button
+                </ImageView>
+                <ImageView
                     android:id="@+id/building04"
                     style="@style/MenuButton.unclickable">
-                </Button>
+                </ImageView>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <Button
+                <ImageView
                     android:id="@+id/building05"
                     style="@style/MenuButton.unclickable">
-                </Button>
-                <Button
+                </ImageView>
+                <ImageView
                     android:id="@+id/building06"
                     style="@style/MenuButton.unclickable">
-                </Button>
+                </ImageView>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <Button
+                <ImageView
                     android:id="@+id/building07"
                     style="@style/MenuButton.unclickable">
-                </Button>
-                <Button
+                </ImageView>
+                <ImageView
                     android:id="@+id/building08"
                     style="@style/MenuButton.unclickable">
-                </Button>
+                </ImageView>
             </LinearLayout>
-            <Button
-                android:id="@+id/map_button"
-                android:text="Map"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onClickListener">
-            </Button>
         </LinearLayout>
     </ScrollView>
+    <Button
+        android:id="@+id/map_button"
+        android:text="Map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:onClick="onClickListener">
+    </Button>
 </LinearLayout>
