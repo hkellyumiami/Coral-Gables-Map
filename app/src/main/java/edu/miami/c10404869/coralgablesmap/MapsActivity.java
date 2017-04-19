@@ -17,6 +17,7 @@ import com.google.android.gms.maps.GoogleMap.OnInfoWindowClickListener;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, OnInfoWindowClickListener{
 
     private GoogleMap mMap;
+    private static final int ZOOM_LEVEL = 12;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +44,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng coralGables = new LatLng(25.748799, -80.279696);
         LatLng congChurch = new LatLng(25.742515, -80.278497);
         mMap.addMarker(new MarkerOptions().position(congChurch).title("Coral Gables Congregational Church"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(coralGables,12));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(coralGables,ZOOM_LEVEL));
     }
 
     public void onInfoWindowClick(Marker marker){

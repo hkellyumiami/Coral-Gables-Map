@@ -14,40 +14,47 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
                 <ImageView
                     android:id="@+id/building01"
                     android:src="@drawable/church_button"
-                    style="@style/MenuButton.clickable"
-                    android:layout_height="wrap_content">
+                    style="@style/MenuButton.clickable">
                 </ImageView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
                 <ImageView
                     android:id="@+id/building02"
                     style="@style/MenuButton.unclickable">
                 </ImageView>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
                 <ImageView
                     android:id="@+id/building03"
                     style="@style/MenuButton.unclickable">
                 </ImageView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
                 <ImageView
                     android:id="@+id/building04"
                     style="@style/MenuButton.unclickable">
                 </ImageView>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
                 <ImageView
                     android:id="@+id/building05"
                     style="@style/MenuButton.unclickable">
                 </ImageView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
                 <ImageView
                     android:id="@+id/building06"
+                    style="@style/MenuButton.unclickable">
+                </ImageView>
+                <ImageView
+                    android:id="@+id/building07"
                     style="@style/MenuButton.unclickable">
                 </ImageView>
             </LinearLayout>
@@ -55,12 +62,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:id="@+id/building07"
+                    android:id="@+id/building08"
                     style="@style/MenuButton.unclickable">
                 </ImageView>
                 <ImageView
-                    android:id="@+id/building08"
-                    style="@style/MenuButton.unclickable">
+                    android:id="@+id/building09"
+                    style="@style/MenuButton"
+                    android:clickable="false">
                 </ImageView>
             </LinearLayout>
         </LinearLayout>
