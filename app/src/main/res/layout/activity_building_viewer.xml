@@ -20,6 +20,14 @@
         android:visibility="visible"
         android:text="EXTRA IMAGES">
     </Button>
+    <Button android:id="@+id/toggle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:onClick="myClickHandler"
+        android:visibility="visible"
+        android:text="TOGGLE INSIDE/OUT">
+    </Button>
     <LinearLayout android:id="@+id/audio_controls"
         android:orientation="horizontal"
         android:layout_width="match_parent"

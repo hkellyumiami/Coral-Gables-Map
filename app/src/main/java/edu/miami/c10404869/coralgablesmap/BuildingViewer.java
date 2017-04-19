@@ -59,10 +59,12 @@ public class BuildingViewer extends Activity {
                 super.onClick();
                 TextView textView = (TextView)findViewById(R.id.text_desc);
                 Button extraImages = (Button)findViewById(R.id.extra_images);
+                Button toggleButton = (Button)findViewById(R.id.toggle);
                 LinearLayout audioControls = (LinearLayout)findViewById(R.id.audio_controls);
                 audioControls.setVisibility(View.VISIBLE);
                 textView.setVisibility(View.VISIBLE);
                 extraImages.setVisibility(View.GONE);
+                toggleButton.setVisibility(View.GONE);
             }
 
         });
@@ -162,6 +164,7 @@ public class BuildingViewer extends Activity {
         //---Identfiy UI elements.
         TextView textView = (TextView)findViewById(R.id.text_desc);
         Button extraImages = (Button)findViewById(R.id.extra_images);
+        Button toggleButton = (Button)findViewById(R.id.toggle);
         LinearLayout audioControls = (LinearLayout)findViewById(R.id.audio_controls);
 
         //---Handle clicks.
@@ -176,6 +179,9 @@ public class BuildingViewer extends Activity {
             case R.id.play:
                 mediaPlayer.start();
                 break;
+            case R.id.toggle:
+                view_id = toggle_view_id;
+                populate();
             case R.id.pause:
                 mediaPlayer.pause();
                 break;
@@ -184,6 +190,7 @@ public class BuildingViewer extends Activity {
                 audioControls.setVisibility(View.GONE);
                 textView.setVisibility(View.GONE);
                 extraImages.setVisibility(View.VISIBLE);
+                toggleButton.setVisibility(View.VISIBLE);
                 break;
             default:
                 break;
