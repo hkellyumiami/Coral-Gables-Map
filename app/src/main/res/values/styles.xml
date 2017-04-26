@@ -30,7 +30,6 @@
 
     <style name="MenuButton.unclickable">
         <item name="android:clickable">false</item>
-        <item name="android:src">@drawable/comingsoon</item>
     </style>
 
 </resources>

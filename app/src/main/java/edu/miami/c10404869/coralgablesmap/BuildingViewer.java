@@ -92,11 +92,16 @@ public class BuildingViewer extends Activity {
         mediaPlayer = new MediaPlayer();
         ImageView mainImage = (ImageView)findViewById(R.id.main_image);
         TextView textView = (TextView)findViewById(R.id.text_desc);
+        Button extraImages = (Button)findViewById(R.id.extra_images);
+        Button toggleButton = (Button)findViewById(R.id.toggle);
         textView.setMovementMethod(new ScrollingMovementMethod());
         switch(view_id) {
             case 1:
                 mainImage.setImageResource(R.drawable.building01image01);
                 textView.setText(R.string.building01text01);
+                extraImages.setBackgroundResource(R.drawable.building01externalbutton);
+                toggleButton.setBackgroundResource(R.drawable.building01internaltoggle);
+                toggleButton.setText(R.string.go_inside);
                 mediaPlayer = MediaPlayer.create(this,R.raw.building01audio01);
                 next_view_id = 2;
                 prev_view_id = 3;
@@ -107,6 +112,9 @@ public class BuildingViewer extends Activity {
                 mainImage.setImageResource(R.drawable.building01image02);
                 textView.setText(R.string.building01text02);
                 mediaPlayer = MediaPlayer.create(this,R.raw.building01audio02);
+                extraImages.setBackgroundResource(R.drawable.building01externalbutton);
+                toggleButton.setBackgroundResource(R.drawable.building01internaltoggle);
+                toggleButton.setText(R.string.go_inside);
                 next_view_id = 3;
                 prev_view_id = 1;
                 toggle_view_id = 4;
@@ -116,6 +124,9 @@ public class BuildingViewer extends Activity {
                 mainImage.setImageResource(R.drawable.building01image03);
                 textView.setText(R.string.building01text03);
                 mediaPlayer = MediaPlayer.create(this,R.raw.building01audio03);
+                extraImages.setBackgroundResource(R.drawable.building01externalbutton);
+                toggleButton.setBackgroundResource(R.drawable.building01internaltoggle);
+                toggleButton.setText(R.string.go_inside);
                 next_view_id = 1;
                 prev_view_id = 2;
                 toggle_view_id = 4;
@@ -125,6 +136,9 @@ public class BuildingViewer extends Activity {
                 mainImage.setImageResource(R.drawable.building01image04);
                 textView.setText(R.string.building01text04);
                 mediaPlayer = MediaPlayer.create(this,R.raw.building01audio04);
+                extraImages.setBackgroundResource(R.drawable.building01internalbutton);
+                toggleButton.setBackgroundResource(R.drawable.building01externaltoggle);
+                toggleButton.setText(R.string.go_outside);
                 next_view_id = 5;
                 prev_view_id = 6;
                 toggle_view_id = 1;
@@ -134,6 +148,9 @@ public class BuildingViewer extends Activity {
                 mainImage.setImageResource(R.drawable.building01image05);
                 textView.setText(R.string.building01text05);
                 mediaPlayer = MediaPlayer.create(this,R.raw.building01audio05);
+                extraImages.setBackgroundResource(R.drawable.building01internalbutton);
+                toggleButton.setBackgroundResource(R.drawable.building01externaltoggle);
+                toggleButton.setText(R.string.go_outside);
                 next_view_id = 6;
                 prev_view_id = 4;
                 toggle_view_id = 1;
@@ -143,6 +160,9 @@ public class BuildingViewer extends Activity {
                 mainImage.setImageResource(R.drawable.building01image06);
                 textView.setText(R.string.building01text06);
                 mediaPlayer = MediaPlayer.create(this,R.raw.building01audio06);
+                extraImages.setBackgroundResource(R.drawable.building01internalbutton);
+                toggleButton.setBackgroundResource(R.drawable.building01externaltoggle);
+                toggleButton.setText(R.string.go_outside);
                 next_view_id = 4;
                 prev_view_id = 5;
                 toggle_view_id = 1;

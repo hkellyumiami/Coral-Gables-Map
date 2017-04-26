@@ -3,6 +3,9 @@
     <string name="title_activity_main_menu">MainMenu</string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_building_viewer">BuildingViewer</string>
+    <string name="additional">Additional Images</string>
+    <string name="go_inside">Go Inside</string>
+    <string name="go_outside">Go Outside</string>
     <string name="title_activity_additional_images">AdditionalImages</string>
     <string name="congregational_church">Coral Gables Congregational Church</string>
     <string name="building01text01">The Congregational Church of Coral Gables was built in 1923 on a plot of land donated by George E. Merrick, the founder of Coral Gables. The church was completed on April 5th, 1925, making it the first church and public building in Coral Gables. Merrick dedicated the building to his father Solomon Merrick who was a Congregational minister. An architectural firm from Chicago, Kiehnel and Elliot, designed the building, modeling it on historical buildings from the colonial Americas and Europe. The Congregational Church, then, was one of the earliest buildings in Coral Gables to employ this Mediterranean style that became the hallmark of the first structures in the city, and is still an important component of the urban landscape to the present day. The Mediterranean style employed in the church is a composite created by Merrick and his architects which combined elements of historical architecture they had seen in books, drawings, and photographs with structures that they observed in their travels to Europe, Cuba, and other parts of Florida. The most important visual influences, however, came from Spanish Colonial architecture, a style that itself was composed of numerous eclectic elements. The building was meant to evoke the colonial history of the Americas, but also represent the beauty and majesty of venerable structures in Spain.</string>
