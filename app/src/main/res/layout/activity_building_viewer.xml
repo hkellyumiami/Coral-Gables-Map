@@ -17,8 +17,7 @@
         android:layout_height="0dp"
         android:layout_weight="10"
         android:onClick="myClickHandler"
-        android:visibility="visible"
-        android:text="@string/additional">
+        android:visibility="visible">
     </Button>
     <Button android:id="@+id/toggle"
         android:layout_width="match_parent"

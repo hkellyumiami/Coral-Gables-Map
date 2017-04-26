@@ -74,7 +74,6 @@
     </ScrollView>
     <Button
         android:id="@+id/map_button"
-        android:text="Map"
         android:textColor="@color/ocean_blue"
         android:layout_width="match_parent"
         android:layout_height="0dp"
