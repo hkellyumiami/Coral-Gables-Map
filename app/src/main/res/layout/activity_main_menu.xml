@@ -17,10 +17,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:id="@+id/building01"
-                    android:src="@drawable/building01"
-                    style="@style/MenuButton.clickable"
-                    android:layout_height="wrap_content">
+                        android:id="@+id/building01"
+                        android:src="@drawable/building01"
+                        style="@style/MenuButton.clickable"
+                        android:layout_height="wrap_content">
                 </ImageView>
                 <ImageView
                     android:id="@+id/building02"
@@ -75,9 +75,11 @@
     <Button
         android:id="@+id/map_button"
         android:text="Map"
+        android:textColor="@color/ocean_blue"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.2"
-        android:onClick="onClickListener">
+        android:layout_weight="0.1"
+        android:onClick="onClickListener"
+        android:background="@drawable/main_menu_map">
     </Button>
 </LinearLayout>
