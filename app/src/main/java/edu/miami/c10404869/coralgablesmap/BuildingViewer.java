@@ -101,7 +101,6 @@ public class BuildingViewer extends Activity {
                 textView.setText(R.string.building01text01);
                 extraImages.setBackgroundResource(R.drawable.building01externalbutton);
                 toggleButton.setBackgroundResource(R.drawable.building01internaltoggle);
-                toggleButton.setText(R.string.go_inside);
                 mediaPlayer = MediaPlayer.create(this,R.raw.building01audio01);
                 next_view_id = 2;
                 prev_view_id = 3;
@@ -114,7 +113,6 @@ public class BuildingViewer extends Activity {
                 mediaPlayer = MediaPlayer.create(this,R.raw.building01audio02);
                 extraImages.setBackgroundResource(R.drawable.building01externalbutton);
                 toggleButton.setBackgroundResource(R.drawable.building01internaltoggle);
-                toggleButton.setText(R.string.go_inside);
                 next_view_id = 3;
                 prev_view_id = 1;
                 toggle_view_id = 4;
@@ -126,7 +124,6 @@ public class BuildingViewer extends Activity {
                 mediaPlayer = MediaPlayer.create(this,R.raw.building01audio03);
                 extraImages.setBackgroundResource(R.drawable.building01externalbutton);
                 toggleButton.setBackgroundResource(R.drawable.building01internaltoggle);
-                toggleButton.setText(R.string.go_inside);
                 next_view_id = 1;
                 prev_view_id = 2;
                 toggle_view_id = 4;
@@ -138,7 +135,6 @@ public class BuildingViewer extends Activity {
                 mediaPlayer = MediaPlayer.create(this,R.raw.building01audio04);
                 extraImages.setBackgroundResource(R.drawable.building01internalbutton);
                 toggleButton.setBackgroundResource(R.drawable.building01externaltoggle);
-                toggleButton.setText(R.string.go_outside);
                 next_view_id = 5;
                 prev_view_id = 6;
                 toggle_view_id = 1;
@@ -150,7 +146,6 @@ public class BuildingViewer extends Activity {
                 mediaPlayer = MediaPlayer.create(this,R.raw.building01audio05);
                 extraImages.setBackgroundResource(R.drawable.building01internalbutton);
                 toggleButton.setBackgroundResource(R.drawable.building01externaltoggle);
-                toggleButton.setText(R.string.go_outside);
                 next_view_id = 6;
                 prev_view_id = 4;
                 toggle_view_id = 1;
@@ -162,7 +157,6 @@ public class BuildingViewer extends Activity {
                 mediaPlayer = MediaPlayer.create(this,R.raw.building01audio06);
                 extraImages.setBackgroundResource(R.drawable.building01internalbutton);
                 toggleButton.setBackgroundResource(R.drawable.building01externaltoggle);
-                toggleButton.setText(R.string.go_outside);
                 next_view_id = 4;
                 prev_view_id = 5;
                 toggle_view_id = 1;
