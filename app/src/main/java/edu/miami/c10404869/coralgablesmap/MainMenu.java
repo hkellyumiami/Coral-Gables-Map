@@ -24,20 +24,6 @@ public class MainMenu extends AppCompatActivity {
             case R.id.building01:
                 callBuildingViewer(1);
                 break;
-            case R.id.building02:
-                break;
-            case R.id.building03:
-                break;
-            case R.id.building04:
-                break;
-            case R.id.building05:
-                break;
-            case R.id.building06:
-                break;
-            case R.id.building07:
-                break;
-            case R.id.building08:
-                break;
             case R.id.map_button:
                 //Starts Map Activity for result
                 Intent data = new Intent();

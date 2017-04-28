@@ -209,7 +209,7 @@ public class BuildingViewer extends Activity {
                 Intent data = new Intent();
                 data.setClassName("edu.miami.c10404869.coralgablesmap",
                         "edu.miami.c10404869.coralgablesmap.AdditionalImages");
-                data.putExtra("extra_id",extra_id);
+                data.putExtra("extra_id", extra_id);
                 startActivity(data);
                 break;
             case R.id.play:
@@ -218,7 +218,9 @@ public class BuildingViewer extends Activity {
                 break;
             case R.id.pause:
                 //---Pause the audio.
-                mediaPlayer.pause();
+                if (mediaPlayer.isPlaying()) {
+                    mediaPlayer.pause();
+                }
                 break;
             case R.id.dismiss:
                 //---Stop the audio and change UI element visibility.

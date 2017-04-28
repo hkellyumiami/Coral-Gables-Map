@@ -14,12 +14,15 @@ public class AdditionalImages extends Activity {
 //-----------------------------------------------------------------------------
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
+        //Starts activity and inflates layout
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_additional_images);
+        //Determines which image to open
         Intent intent = getIntent();
         extra_id = intent.getIntExtra("extra_id", 0);
+        //Populates Layout
         populate();
+        //Initializes swipe functionality
         ImageView main_image = (ImageView)findViewById(R.id.main_image);
         main_image.setOnTouchListener(new OnSwipeTouchListener(this) {
             public void onSwipeRight() {
@@ -34,9 +37,8 @@ public class AdditionalImages extends Activity {
     }
 //-----------------------------------------------------------------------------
     public void populate() {
-
+        //Populates the main image and indicates the next and previous images
         ImageView mainImage = (ImageView)findViewById(R.id.main_image);
-
         switch (extra_id) {
             case 1:
                 mainImage.setImageResource(R.drawable.building01exterior01);

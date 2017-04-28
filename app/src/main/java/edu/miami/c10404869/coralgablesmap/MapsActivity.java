@@ -21,6 +21,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // Starts activity and inflates layout
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
         // Obtains the SupportMapFragment and notifies when the map is ready to be used.
@@ -43,7 +44,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.setOnInfoWindowClickListener(this);
         LatLng coralGables = new LatLng(25.748799, -80.279696);
         LatLng congChurch = new LatLng(25.742515, -80.278497);
-        mMap.addMarker(new MarkerOptions().position(congChurch).title("Coral Gables Congregational Church"));
+        mMap.addMarker(new MarkerOptions().position(congChurch).title(getResources().getString(R.string.congregational_church)));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(coralGables,ZOOM_LEVEL));
     }
 
