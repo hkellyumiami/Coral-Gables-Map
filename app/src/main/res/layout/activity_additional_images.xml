@@ -5,8 +5,14 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <ImageView android:id="@+id/main_image"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+    </ImageView>
+    <TextView android:id="@+id/image_title"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="80">
-    </ImageView>
+        android:layout_weight="1"
+        style="@style/TitleText">
+    </TextView>
 </LinearLayout>
