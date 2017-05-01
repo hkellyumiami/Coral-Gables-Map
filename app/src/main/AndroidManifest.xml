@@ -61,7 +61,8 @@
 
         <activity
             android:name=".AdditionalImages"
-            android:label="@string/title_activity_additional_images">
+            android:label="@string/title_activity_additional_images"
+            android:configChanges="orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />

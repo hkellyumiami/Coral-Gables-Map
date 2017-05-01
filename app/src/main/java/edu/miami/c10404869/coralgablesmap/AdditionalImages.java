@@ -2,6 +2,7 @@ package edu.miami.c10404869.coralgablesmap;
 //-----------------------------------------------------------------------------
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -129,5 +130,12 @@ public class AdditionalImages extends Activity {
             default:
                 break;
         }
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration config) {
+        //Deals with change between horizontal and vertical configurations
+        super.onConfigurationChanged(config);
+        populate();
     }
 }
