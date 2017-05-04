@@ -102,6 +102,9 @@ public class BuildingViewer extends Activity {
         Button toggleButton = (Button)findViewById(R.id.toggle);
         textView.setMovementMethod(new ScrollingMovementMethod());
 
+        //---Reset scroll.
+        textView.scrollTo(0,0);
+
         //---Switch statement identified by the building's view_id.
         switch(view_id) {
             case 1:
@@ -171,6 +174,7 @@ public class BuildingViewer extends Activity {
             case 6:
                 mainImage.setImageResource(R.drawable.building01image06);
                 textView.setText(R.string.building01text06);
+                textView.scrollTo(0,0);
                 mediaPlayer = MediaPlayer.create(this,R.raw.building01audio06);
                 extraImages.setBackgroundResource(R.drawable.building01internalbutton);
                 toggleButton.setBackgroundResource(R.drawable.building01externaltoggle);
