@@ -1,4 +1,4 @@
-package edu.miami.c10404869.coralgablesmap;
+package edu.miami.art.coralgablesmap;
 //-----------------------------------------------------------------------------
 import android.app.Activity;
 import android.content.Intent;

@@ -1,9 +1,7 @@
-package edu.miami.c10404869.coralgablesmap;
+package edu.miami.art.coralgablesmap;
 //-----------------------------------------------------------------------------
 import android.app.Activity;
 import android.content.Intent;
-import android.database.Cursor;
-import android.graphics.drawable.Drawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
@@ -13,8 +11,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import java.io.InputStream;
 
 //-----------------------------------------------------------------------------
 public class BuildingViewer extends Activity {
@@ -211,8 +207,8 @@ public class BuildingViewer extends Activity {
             case R.id.extra_images:
                 //---Start the next activity based on the extra_id.
                 Intent data = new Intent();
-                data.setClassName("edu.miami.c10404869.coralgablesmap",
-                        "edu.miami.c10404869.coralgablesmap.AdditionalImages");
+                data.setClassName("edu.miami.art.coralgablesmap",
+                        "edu.miami.art.coralgablesmap.AdditionalImages");
                 data.putExtra("extra_id", extra_id);
                 startActivity(data);
                 break;

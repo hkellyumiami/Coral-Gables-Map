@@ -1,9 +1,8 @@
-package edu.miami.c10404869.coralgablesmap;
+package edu.miami.art.coralgablesmap;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
 public class MainMenu extends AppCompatActivity {
@@ -27,8 +26,8 @@ public class MainMenu extends AppCompatActivity {
             case R.id.map_button:
                 //Starts Map Activity for result
                 Intent data = new Intent();
-                data.setClassName("edu.miami.c10404869.coralgablesmap",
-                        "edu.miami.c10404869.coralgablesmap.MapsActivity");
+                data.setClassName("edu.miami.art.coralgablesmap",
+                        "edu.miami.art.coralgablesmap.MapsActivity");
                 startActivityForResult(data,CALL_MAP);
                 break;
             default:
@@ -55,8 +54,8 @@ public class MainMenu extends AppCompatActivity {
     public void callBuildingViewer(int view_id) {
         //Puts building id into an intent and starts Building Viewer Activity
         Intent data = new Intent();
-        data.setClassName("edu.miami.c10404869.coralgablesmap",
-                        "edu.miami.c10404869.coralgablesmap.BuildingViewer");
+        data.setClassName("edu.miami.art.coralgablesmap",
+                        "edu.miami.art.coralgablesmap.BuildingViewer");
         data.putExtra("view_id",view_id);
         startActivity(data);
     }
